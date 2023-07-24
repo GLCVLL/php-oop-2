@@ -1,3 +1,10 @@
+<?php
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +15,6 @@
     <title>Shop Online per Animali</title>
 </head>
 <body>
-    
+
 </body>
 </html>
