@@ -9,9 +9,6 @@ $categorie = getCategories();
 $prodotti = getProducts();
 ?>
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +19,23 @@ $prodotti = getProducts();
     <title>Shop Online per Animali</title>
 </head>
 <body>
-
+<div class="container">
+        <h1>Shop Online per Animali</h1>
+        <div class="row">
+            <?php
+            foreach ($prodotti as $prodotto) : 
+                ?>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="<?php echo $prodotto->immagineUrl; ?>" class="card-img-top" alt="<?php echo $prodotto->nome; ?>">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $prodotto->nome; ?></h5>
+                            <p class="card-text"><?php echo $prodotto->categoria->nome; ?></p>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach ?>
+        </div>
+    </div>
 </body>
 </html>
