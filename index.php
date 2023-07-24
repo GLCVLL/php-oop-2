@@ -1,5 +1,12 @@
 <?php
+require_once 'categories.php';
+require_once 'products.php';
 
+// Istanzio tutte le categorie
+$categorie = getCategories();
+
+// Istanzio tutti i prodotti
+$prodotti = getProducts();
 ?>
 
 
